@@ -1,0 +1,92 @@
+ASP.NET applications acquire user-submitted input via the System.Web.HttpRequest class.
+
+Params
+Parameters within the URL query string, the body of
+a POST request, HTTP cookies, and miscellaneous
+server variables are stored as maps of string names to
+string values. This property returns a combined collection
+of all these parameter types.
+
+Item
+Returns the named item from within the Params
+collection.
+
+Form
+Returns a collection of the names and values of form
+variables submitted by the user.
+
+QueryString
+Returns a collection of the names and values of variables
+within the query string in the request.
+
+ServerVariables
+Returns a collection of the names and values of a
+large number of ASP server variables (akin to CGI
+variables). This includes the raw data of the request,
+query string, request method, HTTP Host header, and
+so on.
+
+Headers
+HTTP headers in the request are stored as a map of
+string names to string values and can be accessed
+using this property.
+
+Url
+Rawurl
+Return details of the URL contained within the
+request, including the query string.
+
+Urlreferer
+Returns information about the URL specifi ed in the
+HTTP Referer header in the request.
+
+Cookies
+Returns a collection of Cookie objects, which contain
+details of the cookies received in the request, including
+their names and values.
+
+Files
+Returns a collection of fi les uploaded by the user.
+
+Inputstream
+Binaryread
+Return different representations of the raw request
+received from the client and therefore can be used
+to access any of the information obtained by all the
+other APIs.
+
+Httpmethod
+Returns the method used in the HTTP request.
+
+Browser
+Useragent
+Return details of the user’s browser, as submitted in
+the HTTP User-Agent header.
+
+Accepttypes
+Returns a string array of client-supported MIME types,
+as submitted in the HTTP Accept header.
+
+Userlanguages
+Returns a string array containing the languages
+accepted by the client, as submitted in the HTTP
+Accept-Language header.
+
+
+
+READ AND WRITE FILE CONTENT
+System.IO.FileStream
+n System.IO.StreamReader
+n System.IO.StreamWriter
+
+OS COMMAND INJECTION
+n System.Diagnostics.Start.Process
+n System.Diagnostics.Start.ProcessStartInfo
+
+URL REDIRECTION
+System.Web.HttpResponse.Redirect
+n System.Web.HttpResponse.Status
+n System.Web.HttpResponse.StatusCode
+n System.Web.HttpResponse.AddHeader
+n System.Web.HttpResponse.AppendHeader
+n Server.Transfer
