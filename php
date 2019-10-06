@@ -40,3 +40,18 @@ $_SERVER[‘HTTP_CONNECTION’] Contains the contents of the HTTP
 Connection header.
 $_SERVER[‘HTTP_HOST’] Contains the contents of the HTTP Host
 header.
+$_SERVER[‘HTTP_REFERER’] Contains the contents of the HTTP
+Referer header.
+$_SERVER[‘HTTP_USER_AGENT’] Contains the contents of the HTTP
+User-agent header.
+$_SERVER[‘PHP_SELF’] Contains the name of the currently executing
+script. Although the script name
+itself is outside an attacker’s control,
+path information can be appended to
+this name. For example, if a script contains
+the following code:
+<form action=”<?= $_
+SERVER[‘PHP_SELF’] ?>”>
+an attacker can craft a cross-site scripting
+attack as follows:
+/search.php/”><script>
