@@ -1,0 +1,51 @@
+n fopen
+n readfile
+n file
+n fpassthru
+n gzopen
+gzfile
+n gzpassthru
+n readgzfile
+n copy
+n rename
+n rmdir
+n mkdir
+n unlink
+n file_get_contents
+n file_put_contents
+n parse_ini_file
+
+INCLUDE AND EVALUATE SCRIPTS
+include
+n include_once
+n require
+n require_once
+n virtual
+
+SEND QUERY TO DATABASE
+n mysql_query
+n mssql_query
+n pg_query
+
+DYNAMIC CODE EXECUTION
+n eval
+n call_user_func
+n call_user_func_array
+n call_user_method
+n call_user_method_array
+n create_function
+
+OS COMMAND EXECUTION
+n exec
+n passthru
+n popen
+n proc_open
+n shell_exec
+n system
+n The backtick operator (`)
+
+URL REDIRECTION
+n http_redirect
+n header
+n HttpMessage::setResponseCode
+n HttpMessage::setHeaders
